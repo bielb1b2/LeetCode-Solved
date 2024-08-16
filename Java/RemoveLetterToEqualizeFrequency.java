@@ -23,7 +23,7 @@ public class RemoveLetterToEqualizeFrequency {
             Map<String, Integer> lista = new HashMap<>();
             
 
-            String newString = word.substring(0, i) + word.substring(i+1, word.length());
+            String newString = removeCharAtIndex(i, word);
 
             for (int j = 0; j < newString.length(); j++) {
                 String letra = String.valueOf(newString.charAt(j));
@@ -46,6 +46,10 @@ public class RemoveLetterToEqualizeFrequency {
         }
 
         return false;
+    }
+
+    public static String removeCharAtIndex(int index, String word) {
+        return word.substring(0, index) + word.substring(index+1, word.length());
     }
 
     public static boolean equalFrequency(String word) {
