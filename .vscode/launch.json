@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "DungeonGame",
+            "request": "launch",
+            "mainClass": "DungeonGame",
+            "projectName": "leetcode_ddee587e"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
